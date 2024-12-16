@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = parseInt(prompt("Введите первое число"));
+        let n2 = parseInt(prompt("Введите второе число"));
+
+        let minNum;
+        let divisor = 1;
+
+        if (n1 < n2)
+        {
+            minNum = n1;
+        } 
+        else{
+            minNum =n2;
+        }
+
+        while (divisor <= minNum) 
+        {
+            if (n1 % divisor == 0 && n2 % divisor == 0)
+            {
+                alert(divisor);
+            }    
+            divisor ++;
+        }
+    </script>
+</body>
+</html>

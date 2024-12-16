@@ -1,0 +1,92 @@
+body{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/531/951/621/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-thumb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home, .about, .blog, .contact, .register, .log{
+    color: white;
+}
+
+.menu{
+    border: 2px solid;
+    background-color: black;
+    width: 1382px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+
+
+.tovar{
+    position: relative;
+    z-index: 0;
+    width: 1385px;
+    height: 500px;
+    bottom: 105px;
+}
+
+.content{
+    position: relative;
+    border: 2px solid;
+    background-color:bisque;
+    bottom:135px;
+    width: 1382px;
+    height: 500px;
+}
+
+.sait{
+    color: blue;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 140px;
+    background-color:black;
+    border: black;
+}
+
+.contact{
+    display: inline;
+}
+
+.com{
+    position: relative;
+    width: 50px;
+    left: 15px;
+}
+
+
+#myCom{
+    display: inline;
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+}
+
+#myComs{
+    display: inline;
+    position: relative;
+    bottom: 40px;
+    left: 70px;
+}
+
+
+#myProchee{
+    width: 100px;
+}
+
+#myProchee1{
+    width: 100px;
+}
+
+#myProchee2{
+    width: 100px;
+}
+
+button{
+    cursor: pointer;
+}

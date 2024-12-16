@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Введите время")
+
+         let h, m, s;
+
+         h = prompt("Введите часы");
+
+         m = prompt("Введите минуты");
+
+        s = prompt("Введите секунды");
+
+        if (h <=24){
+             if(m <= 59){
+                if(s <= 59){
+                    alert("Ого, сейчас у вас" + ' ' + h + ":" + m + ":" + s);
+                }
+             }
+        }
+        
+
+        else if (h > 24)
+        {
+            alert("Упс, где-то ошибка")
+        }
+        else if (m > 59)
+        {
+            alert("Упс, где-то ошибка")
+        } else if (s > 59)
+        {
+            alert("Упс, где-то ошибка")
+        }
+        
+
+        
+    </script>
+</body>
+</html>

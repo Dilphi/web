@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal{
+            display: none;
+        }
+
+        .modal-content{
+            justify-content: center;
+            align-items: center;
+            margin: 15%;
+            border: 2px solid;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопка, открывающая модальное окно -->
+<button id="myBtn">Открыть модальное окно</button>
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+
+  <!-- Содержимое модального окна -->
+  <div class="modal-content">
+    <h2>Теперь ваш компьютер пренадлежит мне хихи хаха</h2>
+    <button id="closeBtn">Закрыть</button>
+  </div>
+
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        var modal = document.getElementById("myModal");
+    
+        
+        var btn = document.getElementById("myBtn");
+    
+        
+        var closeBtn = document.getElementById("closeBtn");
+    
+        // Когда пользователь кликает на кнопку, откроется модальное окно
+        btn.onclick = function() {
+            modal.style.display = "flex";
+        }
+    
+        // Когда пользователь кликает на кнопку "Закрыть", модальное окно закрывается
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        
+    });
+    </script>
+    
+    </body>
+    </html>

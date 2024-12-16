@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+}
+.form-container, .result-container {
+    flex: 1;
+    padding: 20px;
+}
+.input{
+    margin-bottom: 10px;
+}
+.input label {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+.result-container {
+    border-left: 2px solid;
+}

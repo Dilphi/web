@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function parseUrl(url) {
+   
+        const parsedUrl = new URL(url);
+
+        // Извлекаем нужные части URL
+        const protocol = parsedUrl.protocol.slice(0, -1); // Убираем двоеточие
+        const domain = parsedUrl.hostname;
+        const path = parsedUrl.pathname;
+
+        // Формируем результат
+        const result = `протокол: ${protocol}, домен: ${domain}, путь: ${path}`;
+        return result;
+    }
+
+        const url =prompt("Вставьте url: ");
+        console.log(parseUrl(url));
+
+    </script>
+</body>
+</html>

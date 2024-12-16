@@ -1,0 +1,35 @@
+
+
+.hm:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+
+}
+
+.text:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+     transform: scale(1.2);
+
+}
+
+.hm{
+    border: 2px solid;
+    background-color: cornflowerblue;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    top: 50px;
+    left: 500px;
+}
+
+
+
+p{
+    position: relative;
+    bottom: 300px;
+    left: 650px;
+    font-size: 20px;
+    color: rgb(0, 17, 255);
+}

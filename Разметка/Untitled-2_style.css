@@ -1,0 +1,72 @@
+.osnova{
+    border: 2px solid;
+    margin-left: 250px;
+    width: 900px;
+    height: 750px;
+}
+.shapka{
+    border: 2px solid;
+    background-color: greenyellow;
+    height: 100px;
+}
+#myShapka{
+    margin-top: 40px;
+    margin-left: 450px;
+}
+
+.menu1{
+    border: 2px solid;
+    background-color: orange; 
+    margin-top: 5px;   
+}
+#myMenu1{
+    margin-left: 400px;
+}
+
+.content{
+    border: 2px solid;
+    background-color:rgb(223, 155, 106);
+    width: 60%;
+    height: 400px;
+    margin-top: 10px;
+   padding: 20px;
+    display: inline-block;
+}
+#myContent{
+    margin-top: 150px;
+    margin-left: 165px;
+}
+
+.blok{
+    border: 2px solid;
+    background-color: honeydew;
+    width: 25%;
+    padding-top: 170px;
+    padding-right: 80px;
+    padding-bottom: 182px;
+    display: inline-block;
+}
+#myBlok{
+    margin-left: 100px;
+}
+
+.menu2{
+    border: 2px solid;
+    background-color: orange;
+    margin-top: 15px;
+}
+#myMenu2{
+    margin-left: 350px;
+    height: 10px;
+}
+
+.podval{
+    border: 2px solid;
+    background-color: chocolate;
+    margin-top: 5px;
+    height: 50px;
+}
+#myPodval{
+    margin-left: 450px;
+    height: 82px;
+}

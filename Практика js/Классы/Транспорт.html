@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транспорт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <label for="legco">Легковые</label>
+            <input type="radio" id="legco" name="vibor" value="legco">
+            
+            <label for="gruz">Грузовые</label>
+            <input type="radio" id="gruz" name="vibor" value="gruz">
+            
+            <label for="moto">Мото</label>
+            <input type="radio" id="moto" name="vibor" value="moto">
+            
+            <button id="enter">Внести данные</button>
+            
+            <form id="transportForm" class="hidden">
+                <div id="common">
+                    <div class="input">
+                        <label for="marka">Марка</label>
+                        <input type="text" id="marka">
+                    </div>
+                    <div class="input">
+                        <label for="model">Модель</label>
+                        <input type="text" id="model">
+                    </div>
+                    <div class="input">
+                        <label for="year">Год</label>
+                        <input type="text" id="year">
+                    </div>
+                    <div class="input">
+                        <label for="color">Цвет</label>
+                        <input type="text" id="color">
+                    </div>
+                    <div class="input">
+                        <label for="vin">VIN</label>
+                        <input type="text" id="vin">
+                    </div>
+                </div>
+                <div id="specific"></div>
+                <button type="button" id="submit">Сформировать</button>
+            </form>
+        </div>
+        
+        <div id="result" class="result-container"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+    

@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+}
+
+.left-block, .right-block{
+    flex: 1;
+    padding: 20px;
+}
+
+.left-block{
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.right-block{
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+.content{
+    display: none;
+}

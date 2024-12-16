@@ -1,0 +1,67 @@
+.name{
+    border: 2px solid;
+    background-color: rgb(235, 168, 42);
+    width: 600px;
+    height: 50px;
+    position: relative;
+    top: 65px;
+    left: 75px;
+    z-index: 1;
+}
+#hm{
+   margin-left: 80px;
+}
+
+.card{
+    border: 2px solid;
+    width: 800px;
+    height: 320px;
+    padding-top: 50px;
+    border-radius: 10px;
+    position: relative;
+    background-image: url('d:\Без_имени-2.png');
+    left: 150px;
+    z-index: 0;    
+}
+
+#card_num{
+    display: inline-block;
+}
+#date{
+    display: inline;
+}
+#cod{
+    display: inline;
+    position: relative;
+    left: 60px;
+}
+
+.date1, .date2, .cod1 {
+    width: 60px;
+}
+
+.cards{
+    color: rgb(255, 204, 0);
+}
+.cards{
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+.kryg{
+    border:2px solid;
+    width: 200px;
+    height: 200px; 
+    position: relative;
+    left: 450px;
+    bottom: 160px;
+    border-radius:100px;
+    background-image: url('d:\UWUh_327VVs.jpg');
+    background-size:cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+  
+    
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function num() {
+            
+            let num =+ prompt();
+            let choice = prompt("Введите 'true' для вывода четных чисел или 'false' для вывода нечетных чисел:")
+            for (let i = 1; i < num; i++){
+                if (choice && i % 2 == 0){
+                    alert(i);
+                }
+                else if (!choice && i %2 != 0){
+                    
+                    alert(i)
+                }
+                
+            }
+        }
+        num()
+    </script>
+</body>
+</html>

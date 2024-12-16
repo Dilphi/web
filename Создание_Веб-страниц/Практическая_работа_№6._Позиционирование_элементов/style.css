@@ -1,0 +1,60 @@
+.main{
+   
+    position: relative;
+    top: 20px;
+    z-index: 0;
+    
+}
+@font-face {
+    font-family: Ave;
+    src: url(d:\Сайт\Marvel\AVENGEANCE_HEROIC_AVENGER_AT.ttf);
+}
+
+.Avengers{
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    bottom: 315px;
+    left: 165px;
+}
+
+
+.hm{
+    margin-top: -110px;
+}
+
+.hulk{
+    position: relative;
+    bottom: 250px;
+    left: 20px;
+}
+.widow{
+    position: relative;
+    bottom: 450px;
+    left: 110px;
+}
+.cap{
+    position: relative;
+    bottom: 641px;
+    left: 150px;
+}
+.ironman{
+    position: relative;
+    bottom: 845px;
+    left: 200px;
+    z-index: 2;
+}
+
+.hawkeye{
+    position: relative;
+    bottom: 1060px;
+    left: 270px;
+    z-index: 3;
+
+}
+.thor{
+    position: relative;
+    bottom: 1260px;
+    left: 310px;
+    z-index: 1;
+}

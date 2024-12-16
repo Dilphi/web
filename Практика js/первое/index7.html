@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let fleshGB = prompt("Введите размер флешки в Гб")
+        parseFloat(fleshGB);
+
+        const fileMB = 820;
+
+        const flashMB = fleshGB * 1024;
+
+        const col = (flashMB / fileMB);
+
+        alert("На флешку объёмом" + ' ' + fleshGB +"Гб" + ' ' + "поместится" + ' ' + col + ' ' + "файлов размеров" + ' ' + fileMB + "МБ");
+    </script>
+</body>
+</html>

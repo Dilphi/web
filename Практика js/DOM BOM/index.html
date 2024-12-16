@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <style>
+        .content{
+            display: flex;
+            justify-content: center;
+        }
+        button{
+            width: 10%;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="calculater">
+        <div class="num1">
+            <input type="text" id="a">
+        </div>
+
+       <div class="sum">
+        <label id="result"></label>
+       </div>
+
+        <div class="num2">
+            <input type="text" id="b">
+        </div>
+        <br>
+        <div>
+            <button id="plus">+</button>
+        </div>
+        <br>
+        <div>
+            <button id="minus">-</button>
+        </div>
+        <br>
+        <div>
+            <button id="multiplication">*</button>
+        </div>
+        <br>
+        <div>
+            <button id="division">/</button>
+        </div>
+        <br>
+        <div>
+            <button id="clear">Очистить</button>
+        </div>
+        
+    </div>
+    <script>
+        // Получаем элементы
+        const aInput = document.getElementById('a');
+        const bInput = document.getElementById('b');
+        const resultLabel = document.getElementById('result');
+        const plusButton = document.getElementById('plus');
+        const minusButton = document.getElementById('minus');
+        const multiplicationButton = document.getElementById('multiplication');
+        const divisionButton = document.getElementById('division');
+        const clearButton = document.getElementById('clear');
+
+        // Функции для выполнения операций
+        function calculate(operation) {
+            const a = +aInput.value;
+            const b = +bInput.value;
+            let result;
+            switch (operation) {
+                case "+":
+                    result = a + b;
+                    break;
+                case "-":
+                    result = a - b;
+                    break;
+                case "*":
+                    result = a * b;
+                    break;
+                case "/":
+                    result = a / b;
+                    break;
+                default:
+                    break;
+            }
+            return result;
+        }
+
+        // Обработчики событий для кнопок
+        plusButton.addEventListener('click', function() {
+            resultLabel.textContent = calculate("+");
+        });
+
+        minusButton.addEventListener('click', function() {
+            resultLabel.textContent = calculate("-");
+        });
+
+        multiplicationButton.addEventListener('click', function() {
+            resultLabel.textContent = calculate("*");
+        });
+
+        divisionButton.addEventListener('click', function() {
+            resultLabel.textContent = calculate("/");
+        });
+
+        clearButton.addEventListener('click', function() {
+            aInput.value = '';
+            bInput.value = '';
+            resultLabel.textContent = '';
+        });
+
+        resultLabel.textContent = "Результат";
+    </script>
+</body>
+</html>

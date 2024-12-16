@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобили!!!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        .container{
+            display: flex;
+        }
+
+        .left-block, .right-block{
+            flex: 1;
+            padding: 20px;
+        }
+
+        .left-block{
+            border-right: 2px solid rgb(0, 0, 0);
+        }
+
+        .right-block{
+            border-right: 2px solid rgb(0, 0, 0);
+        }
+
+        .content{
+            display: none;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container">
+        <div class="left-block">
+            <label>
+                <input type="radio" name="options" value="content1" onclick="showContent()">
+                Мото
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" name="options" value="content2" onclick="showContent()">
+                Легковая
+            </label>
+            <br>
+
+            <label>
+                <input type="radio" name="options" value="content2" onclick="showContent()">
+                Грузовая
+            </label>
+            <br>
+
+            <label>
+                 Общие:
+            </label>
+               
+            <br>
+            <label>
+                <input type="text" name="form1" placeholder="Год?">
+                <br>
+                <input type="text" name="form2" placeholder="Марка?">
+                <br>
+                <input type="text" name="form3" placeholder="Модель?">
+                <br>
+                <input type="text" name="form4" placeholder="Объём двигателя">
+                <br>
+                <input type="text" name="form5" placeholder="Тип топлива?">
+                <br>
+            </label>
+
+            <label>
+                Уникальные:
+            </label>
+            <br>
+
+            <div id="content1" class="content">
+                <label>
+                    Мото
+                    <br>
+                    <input type="text" name="moto" placeholder="Вид мотоцикла?">
+                    <br>
+                    <input type="text" name="moto" placeholder="Главная передача?">
+                    <br>
+                    <input type="text" name="moto" placeholder="Пассажир?">
+                    <br>
+                    <input type="text" name="moto" placeholder="Лобовое?">
+                    <br>
+                    <input type="text" name="moto" placeholder="Вид мотоцикла?">
+                    <br>
+                </label>
+            </div>
+            <div id="content2" class="content">
+                <label>
+                    Легковая
+                </label>
+                <br>
+                    <input type="text" name="auto" placeholder="Вид машины?">
+                    <br>
+                    <input type="text" name="auto" placeholder="Кол-во дверей?">
+                    <br>
+                    <input type="text" name="auto" placeholder="Запас хода?">
+                    <br>
+                    <input type="text" name="auto" placeholder="Привод?">
+                    <br>
+            </div>
+            <div id="content3" class="content">
+                <label>
+                    Грузовая
+                </label>
+                <br>
+                <input type="text" name="truck" placeholder="Грузоподъёмность?">
+                <br>
+                <input type="text" name="truck" placeholder="Вместимость?">
+                <br>
+                <input type="text" name="truck" placeholder="Механика?">
+                <br>
+                <input type="text" name="truck" placeholder="Кол-во колёс">
+                <br>
+            </div>
+            <br>
+        </div>
+        <div class="right-block">
+            <h2>Результат:</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <button type="button" id="buttonmn">Сформировать</button>
+    <script src="main.js"></script>
+</body>
+</html>

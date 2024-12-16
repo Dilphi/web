@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function returnStd() {
+        let quantity = parseInt(prompt("Сколько строк вы хотите объединить?"), 10);
+
+    //Проверка на корректность введенного количества строк
+    if (isNaN(quantity) || quantity <= 0) {
+        alert("Введите корректное число");
+        return "";
+    }
+
+    let result = ""; // Итоговая строка
+
+    for (let i = 0; i < quantity; i++) {
+        let std = prompt(`Введите строку ${i + 1} и нажмите 'OK'`);
+        result += std;
+        
+        //Добавление пробела между строками, кроме последней
+        if (i < quantity - 1) {
+            result += " ";
+        }
+    }
+
+    return result;
+}
+
+console.log(returnStd());
+ 
+    </script>
+</body>
+</html>

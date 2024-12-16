@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function transformString(str) {
+    let transformed = "";
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (char >= 'A' && char <= 'Z') { // Если символ - большая буква
+            transformed += char.toLowerCase(); // Преобразуем в маленькую
+        } else if (char >= 'a' && char <= 'z') { // Если символ - маленька буква
+            transformed += char.toUpperCase(); // Преобразуем в большую букву
+        } else if (char >= '0' && char <= '9') { // Если символ - цифра
+            transformed += '_'; // Заменяем на нижнее подчеркивание
+        } else {
+            transformed += char; // Оставляем символы, которые не являются буквами или цифрами без изменений
+        }
+    }
+    return transformed;
+}
+
+let str = prompt("Введите строку:");
+let result = transformString(str);
+alert("Результат преобразования: " + result);
+
+    </script>
+</body>
+</html>

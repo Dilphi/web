@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    let num1, num2, sum;
+        function Calculator (sum,num1,num2) {
+           
+           
+            switch (sum) {
+                case "+":
+                sum = num1 + num2;
+                return sum;
+                break;
+
+            case "-":
+            sum = num1 - num2;
+            return sum;
+                break;
+
+            case "*":
+            sum = num1 * num2;
+            return sum;
+                break;
+
+            case "/":
+            sum = num1 / num2;
+            return sum;
+                break;
+
+            default:
+                break;
+            }
+        }
+            num1 =+ prompt("Введите первое число");
+            num2 =+ prompt("Введите второе число");
+            sum = prompt("Введите операцию из предложеного: +  * - /")
+        alert(Calculator(sum,num1,num2));
+    </script>
+</body>
+</html>

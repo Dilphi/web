@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+let receipt = [
+    ['Молоко', 2, 50],
+    ['Хлеб', 1, 30],
+    ['Яблоки', 3, 20],
+    ['Картофель', 5, 15]
+];
+
+// 1. Распечатка чека на экран
+function printReceipt(receipt) {
+    console.log("Чек:");
+    for (let i = 0; i < receipt.length; i++) {
+       console.log(receipt[i][0] + ' ' + receipt[i][1] + ' ' + "шт. по" + ' ' + receipt[i][2] + ' ' + "руб.");
+    }
+}
+
+// 2. Подсчет общей суммы покупки
+function calculateTotal(receipt) {
+    let total = 0;
+    for (let i = 0; i < receipt.length; i++) {
+        total += receipt[i][1] * receipt[i][2];
+    }
+    return total;
+}
+
+// 3. Получение самой дорогой покупки в чеке
+function getMostExpensivePurchase(receipt) {
+    let maxPrice = 0;
+    let mostExpensivePurchase = null;
+    for (let i = 0; i < receipt.length; i++) {
+        let totalPrice = receipt[i][1] * receipt[i][2];
+        if (totalPrice > maxPrice) {
+            maxPrice = totalPrice;
+            mostExpensivePurchase = receipt[i];
+        }
+    }
+    return mostExpensivePurchase[0];
+}
+
+// 4. Подсчет средней стоимости одного товара в чеке
+function calculateAveragePrice(receipt) {
+    let totalItems = 0;
+    let totalPrice = 0;
+    for (let i = 0; i < receipt.length; i++) {
+        totalItems += receipt[i][1];
+        totalPrice += receipt[i][1] * receipt[i][2];
+    }
+    return totalPrice / totalItems;
+}
+
+// Пример использования функций
+printReceipt(receipt);
+console.log("Общая сумма покупки:", calculateTotal(receipt), "руб.");
+console.log("Самая дорогая покупка:", getMostExpensivePurchase(receipt));
+console.log("Средняя стоимость одного товара:", calculateAveragePrice(receipt), "руб.");
+
+
+    </script>
+</body>
+</html>

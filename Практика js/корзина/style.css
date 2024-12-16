@@ -1,0 +1,65 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    z-index: 1;
+}
+.logo {
+    position: relative;
+    bottom: 30px;
+    z-index: 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+    width: 90%;
+    height: 500px;
+    position: relative;
+    left: 5%;
+    background-color: bisque;
+}
+.box1, .box2, .box3 {
+    display: grid;
+    border: 2px solid;
+    width: 200px;
+    height: 300px;
+}
+.tovar3 {
+    width: 95%;
+    position: relative;
+    left: 5px;
+}
+.podval {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+    width: 90%;
+    position: relative;
+    left: 5%;
+}
+.scrollable {
+    overflow-y: scroll; /* Добавляет вертикальную прокрутку */
+    max-height: 400px; /* Устанавливает максимальную высоту контейнера, при которой будет отображаться полоса прокрутки */
+}

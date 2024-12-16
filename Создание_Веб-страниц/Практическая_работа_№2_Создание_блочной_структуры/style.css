@@ -1,0 +1,59 @@
+/*Первое задание index*/
+.pervoe{
+    border: 2px solid;
+    width: 450px;
+    position: relative;
+    border-top: white;
+    left: 50px;
+
+}
+
+/*Второе задание index2*/
+.vtoroe{
+    border: 2px solid;
+    background-color:rgb(114, 150, 215);
+    border-color: rgb(114, 150, 215);
+}
+.vtoroe , .text{
+    width: 450px;
+}
+.text{
+    border:2px solid;
+    background-color: rgb(134, 171, 173);
+    border-color: rgb(134, 171, 173);
+    margin-top: 15px;
+}
+/*Третье задание index3*/
+
+.spisok{
+    
+    background-color:rgb(95, 95, 234);
+    width: 500px;
+}
+
+.prodyct{
+
+    border: 2px solid;
+    width: 100px;
+    background-color: darkcyan;
+    border-color:blueviolet;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/*Четвёртое задание*/
+
+.ne_sdelal{
+
+    background-color:rgb(178, 233, 235);
+    width: 150px;
+}
+
+.sdelal{
+    background-color:darkgrey;
+    width: 150px;
+}
+
+
+/*Пятое задание*/
+

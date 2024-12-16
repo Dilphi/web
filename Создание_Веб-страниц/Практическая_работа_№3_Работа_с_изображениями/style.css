@@ -1,0 +1,75 @@
+img{
+    width: 135px;
+    height: 184px;
+    position: relative;
+    top: 10px;
+    left: 55px;
+
+
+}
+
+.text{
+    margin-left: 120px;
+}
+
+.pepper, .apple, .cheese, .corn, .mushroom{
+    border: 2px solid;
+    border-radius: 40px;
+    float: left;
+    position: relative;
+    top: 10px;
+    width: 270px;
+    
+   
+    
+}
+
+.apple{
+    left: 10px;
+}
+.cheese{
+    left: 10px;
+}
+.corn{
+    left: 10px;
+}
+.mushroom{
+    left: 10px;
+}
+
+.garlic, .beef, .fish, .eggs, .coriander{
+    border: 2px solid;
+    border-radius: 40px;
+    float: left;
+    position: relative;
+    top: 20px;
+    width: 270px;
+    
+}
+
+.beef{
+    left: 10px;
+}
+.fish{
+    left: 10px;
+}
+.eggs{
+    left: 10px;
+}
+.coriander{
+    left: 10px;
+}
+
+.The{
+    border:2px solid;
+    border-left-color: wheat;
+    border-right-color: wheat;
+    border-bottom-color: wheat;
+    position: relative;
+    top:  600px;
+}
+.end{
+    display: inline;
+    position: relative;
+    right: 700px;
+}

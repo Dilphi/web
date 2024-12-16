@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function NumToText(num) {
+        // Проверка на двузначность
+        if (num < 10 || num > 99) {
+            return "Число должно быть двузначным";
+        }
+
+        // Массивы для текстового представления чисел от 0 до 19 и десятков
+        const units = ["", "один", "два", "три", "четыре", "пять", "шесть", "семь", "восемь", "девять", "десять", "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать", "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"];
+        
+        const tens = ["", "", "двадцать", "тридцать", "сорок", "пятьдесят", "шестьдесят", "семьдесят", "восемьдесят", "девяносто"];
+
+        // Получение цифры десятков и единиц
+        const tensDigital = Math.floor(num / 10);
+        const unitsDigital = num % 10;
+
+        // Проверка на числа от 11 до 19
+        if (num >= 11 && num <= 19) {
+            return units[num];
+        }
+
+        // Создание текстового представления
+        let text = tens[tensDigital]
+        if (unitsDigital !== 0) {
+            text += " " + units[unitsDigital];
+        }
+
+        return text;
+}
+
+let num = +prompt("Введите двузначное число:");
+let result = NumToText(num);
+alert(result);
+
+    </script>
+</body>
+</html>

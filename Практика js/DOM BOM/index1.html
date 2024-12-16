@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .content {
+            border: 2px solid;
+            width: 700px;
+            position: relative;
+            left: 25%;
+            padding: 20px;
+            background-color: black;
+        }
+        .foto {
+            display: block;
+            margin: 20px auto;
+        }
+        h2 {
+            text-align: center;
+            color:aliceblue;
+        }
+        .hidden {
+            display: none;
+        }
+        .center {
+            text-align: center;
+        }
+        label, p{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div id="vopros">
+            <h2>Что такое жидкое золото?</h2>
+            <img src="https://cs12.pikabu.ru/post_img/big/2022/03/30/11/1648665399112627646.jpg" alt="foto" width="500px" class="foto" id="image">
+            <br>
+            <label>
+                <input type="radio" name="vibor" id="one"> Мёд
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="vibor" id="two"> Пиво
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="vibor" id="three"> Новый химический элемент
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="vibor" id="four"> Лимонад
+            </label>
+            <br>
+            <br>
+            <button id="btn">Отправить ответ</button>
+            <p id="score"></p>
+        </div>
+    </div>
+    <script>
+        let otvet = 0; // Здесь хранится количество правильных ответов
+
+        function loadNextQuestion(contentDiv, score, nextQuestionHtml) {
+            contentDiv.innerHTML = ''; // Очищаем содержимое контейнера
+            contentDiv.innerHTML += nextQuestionHtml; // Добавляем новый вопрос
+            document.getElementById("score").textContent = `Количество правильных ответов: ${otvet}`;
+        }
+
+        document.getElementById('btn').addEventListener('click', function() {
+            let two = document.getElementById("two");
+            let contentDiv = document.querySelector('.content');
+            let score = document.getElementById('score');
+            
+            if (two.checked) {
+                otvet++;
+            }
+            const nextQuestionHtml = `
+                <div id="vopros2">
+                    <h2>Какого цвета лето?</h2>
+                    <label>
+                        <input type="radio" name="vibor" id="one2"> Неба
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="vibor" id="two2"> Летнего
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="vibor" id="three2"> У лета нет цвета
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="vibor" id="four2"> Что за вопрос?
+                    </label>
+                    <br>
+                    <br>
+                    <button id="btn2">Отправить ответ</button>
+                    <p id="score">Количество правильных ответов: ${otvet}</p>
+                </div>`;
+            loadNextQuestion(contentDiv, score, nextQuestionHtml);
+
+            document.getElementById("btn2").addEventListener('click', function() {
+                let one2 = document.getElementById("one2");
+
+                if (one2.checked) {
+                    otvet++;
+                }
+                const thirdQuestionHtml = `
+                  <div id="vopros3">
+                                <h2>Слава гнида?</h2>
+                                <label>
+                                    <input type="radio" name="vibor" id="one3"> Да
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" name="vibor" id="two3"> Нет
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" name="vibor" id="thre3"> Конечно
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" name="vibor" id="four3"> Возможно
+                                </label>
+                                <br>
+                                <br>
+                                <button id="btn3">Отправить ответ</button>
+                            </div>
+                        <p id="score">Количество правильных ответов: ${otvet}</p>
+                    </div>`;
+                loadNextQuestion(contentDiv, score, thirdQuestionHtml);
+
+                document.getElementById("btn3").addEventListener('click', function() {
+                    let four3 = document.getElementById("four3");
+
+                    if (four3.checked) {
+                        otvet++;
+                    }
+                    contentDiv.innerHTML = `<p class="center">Ваш итоговый результат: ${otvet} правильных ответов</p>`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

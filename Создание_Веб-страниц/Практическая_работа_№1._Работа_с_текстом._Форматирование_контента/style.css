@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'hmm';
+    src: url('Практика/Создание_Веб-страниц/Практическая_работа_№1._Работа_с_текстом._Форматирование_контента/UtromPressKachat.ttf') format('ttf');
+}
+
+.nachalo, .seredina, .end{
+    font-family:'hmm', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.slovo{
+    color:rgb(0, 136, 255);
+    font-size: 25px;
+}
+
+.god{
+    color: red;
+    font-size: 25px;
+}
+
+.poc{
+    color: green;
+    font-size: 25px;
+}
+
+.naz{
+    color: darkblue;
+    position: relative;
+    left: 500px;
+    
+}

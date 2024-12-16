@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one, .two{
+            border: 2px solid;
+            height: 300px;
+            float: left;
+        }
+
+        .one{
+            border-right: white;
+            
+        }
+
+        .two{
+            border-left: white;
+        }
+
+        #user, #login{
+            width: 200px;
+        }
+
+        button{
+            position: relative;
+            left: 300px;
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+
+        input{
+            border-top: white;
+            border-left: white;
+            border-right: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="one">
+            <p>Registration form</p>
+            <input type="text" id="user" placeholder="Username">
+            <br>
+            <br>
+            <input type="email" id="login" placeholder="Email address">
+            <br>
+            <br>
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm password">
+            <br>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label for="checkbox">I want to receise mews and special offers</label>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label for="checkbox">I agree with the Terms and Condition</label>
+            <button>SUBMIT</button>
+        </div>
+        
+        <div class="two">
+            <p>Personal details</p>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <br>
+            <br>
+
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <input type="date" placeholder="mm/dd/yyyy">
+        </div>
+    </form>
+</body>
+</html>

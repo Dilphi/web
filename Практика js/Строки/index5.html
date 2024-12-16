@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input
+        function createAbliver(input) {
+        //Разделяем строку на слова
+        input = prompt();
+        let words = input.trim().split(' ');
+
+        //Берём первую букву каждого слова и сделать её заглавной
+        let abliver = '';
+        for (let word of words) {
+            abliver += word[0].toUpperCase();
+        }
+
+        return abliver;
+}
+
+console.log(createAbliver());
+
+    </script>
+</body>
+</html>
